@@ -1,0 +1,61 @@
+.content {
+  padding: 2%;
+  background: #EFE9E7;
+  color: #3D1101;
+  text-align: center; }
+  .content h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 6px; }
+  .content p {
+    font-size: 14px;
+    margin-bottom: 6px; }
+  .content #Loginform {
+    font-family: "Lato";
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #3D1101;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 10px #2e2e2e;
+    -moz-box-shadow: 5px 5px 10px #2e2e2e;
+    box-shadow: 5px 5px 10px #2e2e2e; }
+    .content #Loginform .pure-form legend {
+      font-size: 20px;
+      font-weight: bold;
+      color: #3D1101; }
+    .content #Loginform .pure-form label {
+      width: 120px; }
+    .content #Loginform .pure-form input:focus {
+      background-color: #c48424;
+      background-color: rgba(250, 150, 0, 0.322);
+      border-color: #3D1101;
+      -webkit-box-shadow: 2px 2px 4px #434446;
+      -moz-box-shadow: 2px 2px 4px #434446;
+      box-shadow: 2px 2px 4px #434446; }
+    .content #Loginform .pure-form .pure-controls {
+      margin: 0; }
+    .content #Loginform .btn-primary {
+      display: inline-block;
+      width: 45%;
+      margin: 0;
+      color: white; }
+      .content #Loginform .btn-primary:before, .content #Loginform .btn-primary:after {
+        content: "";
+        display: table; }
+      .content #Loginform .btn-primary:after {
+        clear: both; }
+      .content #Loginform .btn-primary.login {
+        background-color: #F56C23;
+        margin-right: 3px; }
+        .content #Loginform .btn-primary.login:hover {
+          background-color: #f3b60d; }
+      .content #Loginform .btn-primary.signup {
+        background-color: #5f5c5a;
+        margin-left: 3px; }
+        .content #Loginform .btn-primary.signup:hover {
+          background-color: #7a7a7a;
+          background-color: rgba(122, 122, 122, 0.712); }

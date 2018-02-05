@@ -1,0 +1,71 @@
+@import 'grid';
+@import 'mixin';
+@import 'layout';
+@import 'variables';
+
+.content{
+    padding: 2%;
+    background: #EFE9E7;
+    color: $major-ft-color;
+    text-align: center; 
+    h1{
+        font-size: $ft-xxl;
+        font-weight: bold;
+        margin-bottom: 6px;
+    }
+    p{
+        font-size: $ft-s;
+        margin-bottom: 6px;
+    }
+    #Loginform{
+        font-family: $ft_eng;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 10px;
+        border: 1px solid #3D1101;
+        @include border-radius(5px);
+        @include box-shadow(5px,5px,10px,rgb(46, 46, 46));
+        .pure-form {
+            legend {
+                font-size: $ft-xl;
+                font-weight: bold;
+                color: #3D1101;
+            }
+            label{
+                width: 120px;
+            }
+            input:focus{
+                background-color: rgb(196, 132, 36);
+                background-color: rgba(250, 150, 0, 0.322);
+                border-color: #3D1101;
+                @include box-shadow(2px,2px,4px,rgb(67, 68, 70));
+            }
+            .pure-controls{
+                margin: 0;;
+            }
+        }
+        .btn-primary {
+            display: inline-block;
+            width: 45%;
+            margin: 0;
+            color: rgb(255, 255, 255);
+            @include clearfix;
+            &.login{
+                background-color: #F56C23;
+                margin-right: 3px;
+                &:hover{
+                    background-color: rgb(243, 182, 13);
+                }
+            }
+            &.signup{
+                background-color: rgb(95, 92, 90);
+                margin-left: 3px;
+                &:hover{
+                    background-color: rgb(122, 122, 122);
+                    background-color: rgba(122, 122, 122, 0.712);
+                }
+            }    
+        }
+
+    }
+}

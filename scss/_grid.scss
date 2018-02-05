@@ -1,0 +1,54 @@
+@mixin i-pad {
+    @media (max-width: 800px) {
+        @content
+    }
+}
+
+@mixin below_i-pad{
+    @media (max-width: 768px) {
+        @content
+    }
+}
+
+@mixin i-6plus {
+    @media (max-width: 414px) {
+        @content
+    }
+}
+
+@mixin below-i-6plus {
+    @media (max-width: 413px) {
+        @content
+    }
+}
+
+@mixin i-7 {
+    @media (max-width: 375px) {
+        @content
+    }
+}
+
+@mixin below-i-7 {
+    @media (max-width: 374px) {
+        @content
+    }
+}
+
+@mixin i-5-cross {
+    @media (max-width: 568px) {
+        @content
+    }
+}
+
+@mixin below-i-5-cross {
+    @media (max-width: 567px) {
+        @content
+    }
+}
+
+@mixin i-5 {
+    @media (max-width: 320px) {
+        @content
+    }
+}
+

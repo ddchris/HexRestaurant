@@ -1,0 +1,166 @@
+@import 'grid';
+@import 'mixin';
+@import 'layout';
+@import 'variables';
+
+.content{
+    width: 100%;
+    background-color: bisque;
+    color: $major-ft-color;
+    text-align: center;
+    @include clearfix;
+    .asideMenu{
+        float: left;
+		width: 200px;
+		margin-top: 16px;
+		text-align: center;
+		line-height: 1.4;
+		letter-spacing: 1.5px;
+        @include below-i-5-cross {
+			float: none;
+            width: 100%;
+			text-align: left;
+		}
+		h4{
+			width: 80%;
+			margin: 0 auto;
+			font-size: $ft-l;
+		}
+		li{
+			width: 80%;
+			margin: 0 auto;
+			padding: 5px;
+			border-bottom: 1px solid black;
+			&:hover{
+				background-color: $major-ft-color;
+				color: #fff;
+			}
+			a{
+				display: block;
+			}
+		}
+    }   
+    .main{
+        margin-left: 200px;
+        @include clearfix;
+        @include below-i-5-cross {
+            float: none;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .mainBar{
+			height: 25px;
+            .searchBar{
+                margin-top: 16px;
+                input{
+				width: 61%;
+				float: left;
+				margin-left: 1%;
+				border: 2px solid #3d1101;
+				height: 30px;
+				padding-left: 10px;
+				background-color: rgb(236, 234, 234);
+                @include i-pad{
+                    width: 50%;
+                }
+                @include below-i-5-cross {
+                    float: left;
+                    width: 84%;
+                    margin-left: 5%;
+				}
+				&:focus{
+					background-color: rgb(255, 255, 255);
+				}
+                }
+                .icon{
+					float: left;
+					padding: 0 7px 0 5px;
+					vertical-align: center;
+					line-height: 30.5px;
+					background: $major-ft-color;
+					cursor: pointer;
+					color: $minor-ft-color;
+					font-size: 14px;
+                    &:hover{
+                        background-color: rgb(202, 63, 21);
+                        background-color: rgba(202, 63, 21, 0.555)
+                    }
+				}
+			} 
+			#cartLogo{
+			float: left;
+			margin-left: 10%;
+			font-size: $ft-l;
+			line-height: 30px;
+			padding: 0 5px;
+			cursor: pointer;
+			@include border-radius(2px);
+			&:hover{
+				background-color: $major-ft-color;
+				color: $minor-ft-color;
+			}
+			@include below-i-5-cross {
+				float: right;
+				margin-right: 5%;
+				margin-top: 4px;
+			}
+			}
+			 
+        }   
+        ul{
+			margin-top: 20px;
+			@include clearfix;
+			@include below-i-5-cross{
+				margin-top: 40px;
+			}
+            li{
+                float: left;
+                width: 31%;
+                margin-left: 1%;
+                margin-right: 1%;
+                margin-bottom: 15px;
+				margin-top: 5px;
+				border:1px solid rgba(224, 221, 221, 0.589);
+				@include box-shadow(1px,1px,3px,rgb(82, 81, 81));
+				@include border-radius(3px);
+                @include i-pad{
+                    width: 48%;
+                }
+                @include below-i-5-cross {
+					float: none;
+					width: 90%;
+					margin: 15px auto;
+                }
+                img{
+                    min-height: 115px;
+				}
+				#information{
+					width: 80%;
+					margin:  15px auto;
+					#foodTitle{
+						font-size: $ft-xl;
+						font-family: $ft-chi;
+						margin-bottom: 3px;
+					}
+					#engTitle{
+						font-family: $ft_eng;
+						font-size: $ft-s;
+						margin-bottom: 10px;
+					}   
+					#addToCart{
+						margin-top: 8px;
+						margin-bottom: 8px;
+						padding: 5px;
+						color: $btn-color;
+						border: 1px solid $btn-color;
+						@include border-radius(5px);
+						&:hover{
+							background-color: $btn-color;
+							color: #fff;
+						}
+					}
+				}    
+            }
+        }
+    }
+} 

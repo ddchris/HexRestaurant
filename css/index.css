@@ -23,6 +23,7 @@
         border-bottom: 1px solid #3D1101; }
       @media (max-width: 460px) {
         .content #features #introText {
+          padding-left: 0;
           font-size: 16px;
           height: 75px; } }
     .content #features #introList ul li {

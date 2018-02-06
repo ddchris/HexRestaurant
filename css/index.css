@@ -51,7 +51,8 @@
         padding: 15px 20px 15px 35px; }
         @media (max-width: 800px) {
           .content #features #introList ul li p {
-            padding: 15px 25px 15px 50px; } }
+            padding: 15px 25px 15px 50px;
+            text-align: left; } }
   .content #chefInfo {
     background-color: #141414; }
     .content #chefInfo:before, .content #chefInfo:after {
@@ -132,7 +133,8 @@
         -ms-border-radius: 50%;
         border-radius: 50%; }
       .content #comments ul li p {
-        margin-top: 22px; }
+        margin-top: 22px;
+        text-align: left; }
       .content #comments ul li .status {
         float: right;
         margin-right: 5%; }

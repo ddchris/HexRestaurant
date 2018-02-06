@@ -24,7 +24,7 @@ body{
 	height: 56px;
 	background-color: rgb(0, 0, 0);
 	position: relative;
-	@include i-5-cross{
+	@include i-pad{
 		position: fixed;
 		z-index: 100;
 	}
@@ -44,7 +44,7 @@ body{
 	font-size: $ft-xl;
 	margin-top: 18px;
 	margin-right: 18px;
-	@include i-5-cross{
+	@include i-pad{
 		margin-top: 0;
 		max-height: 0;
 		overflow: hidden;
@@ -61,7 +61,7 @@ body{
 		&:hover{
 			color:$btn-color;
 		}
-		@include i-5-cross{
+		@include i-pad{
 			width: 100%;
 			margin-right: 0;
 			float: none;
@@ -87,7 +87,7 @@ body{
 		&:active{
 			color:rgb(235, 162, 4);
 		}
-		@include i-5-cross{
+		@include i-pad{
 			display: block;
 		}
 	}
@@ -140,11 +140,12 @@ body{
 	position: relative;
 	line-height: 1.4;
 	color: $major-ft-color;
-	font-size: $ft-s;
+	font-size: $ft-xxl;
 	letter-spacing: 1px;
 	height: 165px;
 	background: #EFE9E7;
-	@include below-i-7{
+	@include clearfix;
+	@include below-i-5-cross{
 		height: auto;
 		text-align: center;
 		width: 100%;
@@ -152,56 +153,57 @@ body{
 	};
 	.about{
 		float: left;
-		width: 150px;
-		margin: 26px 0 0 20px;
-		@include below-i-5-cross{
+		width: 30%;
+   		margin: 26px 0 0 5%;
+		@include i-pad{
 			display: none;
-		};
+		}
 		h3{
 			font-weight: bold;
-			font-size: $ft-m;
 			margin-bottom: 5px;
 		}
 		p{
 			font-family: $ft_eng;
+			font-size: $ft-m;
 		}
 	}
 	.contact{
 		float: left;
 		margin: 26px 5px 0 20px;
+		// @include below-i-5-cross{
+		// 	margin-top: 41px;
+		// };
 		@include below-i-5-cross{
-			margin-top: 41px;
-		};
-		@include below-i-7{
 			float: none;
 			margin: 0;
 			width: 100%;
 		};
 		h3{
 			font-weight: bold;
-			font-size: $ft-m;
 			margin-bottom: 5px;
+		}
+		ul{
+			font-size: $ft-m;
 		}
 	}
 	.footLogo{
 		position: absolute;
 		top: 35px;
-		right: 20px;
-		width: 160px;
-		height: 31px;
+		right: 6%;
+		width: 245px;
+		height: 47px;
 		background-image: url(../imgs/logo_l.svg);
 		background-size: cover;
-		@include below-i-6plus{
-			right: 10px;
-		};
-		@include below-i-7{
+		@include below-i-5-cross{
 			position: static;
 			margin: 15px auto 0 auto;
 		};
 	}
 	.socialLink{
-		float: right;
-		@include below-i-7{
+			float: right;
+			margin-right: 3.6%;
+			margin-top: 29px;
+		@include below-i-5-cross{
 			float: none;
 			display: inline-block;
 			margin: 10px 0 0 15px;
@@ -211,22 +213,14 @@ body{
 			float: left;
 			margin-top: 80px;
 			margin-right: 20px;
-			@include below-i-6plus{
-				margin-right: 10px;
-				margin-top: 94px;	
-			};
-			@include below-i-7{
+			@include below-i-5-cross{
 				margin-top: 0;
 			};
 		}
 		img{
-			height: 40px;
-			width: 40px;
-			display: block;
-			@include below-i-6plus{
-				height: 35px;
-				width: 35px;
-			};
+			height: 36px;
+			width: 36px;
+			display: block;	
 		}
 
 	}

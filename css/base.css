@@ -73,7 +73,7 @@ body {
   height: 56px;
   background-color: black;
   position: relative; }
-  @media (max-width: 568px) {
+  @media (max-width: 769px) {
     .header {
       position: fixed;
       z-index: 100; } }
@@ -93,7 +93,7 @@ body {
     font-size: 20px;
     margin-top: 18px;
     margin-right: 18px; }
-    @media (max-width: 568px) {
+    @media (max-width: 769px) {
       .header .menu {
         margin-top: 0;
         max-height: 0;
@@ -113,7 +113,7 @@ body {
       margin-right: 30px; }
       .header .menu li:hover {
         color: #FF5E45; }
-      @media (max-width: 568px) {
+      @media (max-width: 769px) {
         .header .menu li {
           width: 100%;
           margin-right: 0;
@@ -142,7 +142,7 @@ body {
         color: #eba204; }
     .header #mobileMenuLogo:active {
       color: #eba204; }
-    @media (max-width: 568px) {
+    @media (max-width: 769px) {
       .header #mobileMenuLogo {
         display: block; } }
 
@@ -191,11 +191,16 @@ body {
   position: relative;
   line-height: 1.4;
   color: #3D1101;
-  font-size: 14px;
+  font-size: 25px;
   letter-spacing: 1px;
   height: 165px;
   background: #EFE9E7; }
-  @media (max-width: 374px) {
+  .footer:before, .footer:after {
+    content: "";
+    display: table; }
+  .footer:after {
+    clear: both; }
+  @media (max-width: 567px) {
     .footer {
       height: auto;
       text-align: center;
@@ -203,50 +208,47 @@ body {
       padding: 2%; } }
   .footer .about {
     float: left;
-    width: 150px;
-    margin: 26px 0 0 20px; }
-    @media (max-width: 567px) {
+    width: 30%;
+    margin: 26px 0 0 5%; }
+    @media (max-width: 769px) {
       .footer .about {
         display: none; } }
     .footer .about h3 {
       font-weight: bold;
-      font-size: 16px;
       margin-bottom: 5px; }
     .footer .about p {
-      font-family: "Lato"; }
+      font-family: "Lato";
+      font-size: 16px; }
   .footer .contact {
     float: left;
     margin: 26px 5px 0 20px; }
     @media (max-width: 567px) {
-      .footer .contact {
-        margin-top: 41px; } }
-    @media (max-width: 374px) {
       .footer .contact {
         float: none;
         margin: 0;
         width: 100%; } }
     .footer .contact h3 {
       font-weight: bold;
-      font-size: 16px;
       margin-bottom: 5px; }
+    .footer .contact ul {
+      font-size: 16px; }
   .footer .footLogo {
     position: absolute;
     top: 35px;
-    right: 20px;
-    width: 160px;
-    height: 31px;
+    right: 6%;
+    width: 245px;
+    height: 47px;
     background-image: url(../imgs/logo_l.svg);
     background-size: cover; }
-    @media (max-width: 413px) {
-      .footer .footLogo {
-        right: 10px; } }
-    @media (max-width: 374px) {
+    @media (max-width: 567px) {
       .footer .footLogo {
         position: static;
         margin: 15px auto 0 auto; } }
   .footer .socialLink {
-    float: right; }
-    @media (max-width: 374px) {
+    float: right;
+    margin-right: 3.6%;
+    margin-top: 29px; }
+    @media (max-width: 567px) {
       .footer .socialLink {
         float: none;
         display: inline-block;
@@ -260,18 +262,10 @@ body {
       float: left;
       margin-top: 80px;
       margin-right: 20px; }
-      @media (max-width: 413px) {
-        .footer .socialLink li {
-          margin-right: 10px;
-          margin-top: 94px; } }
-      @media (max-width: 374px) {
+      @media (max-width: 567px) {
         .footer .socialLink li {
           margin-top: 0; } }
     .footer .socialLink img {
-      height: 40px;
-      width: 40px;
+      height: 36px;
+      width: 36px;
       display: block; }
-      @media (max-width: 413px) {
-        .footer .socialLink img {
-          height: 35px;
-          width: 35px; } }

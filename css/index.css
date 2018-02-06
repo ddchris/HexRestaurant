@@ -1,0 +1,195 @@
+.content {
+  width: 100%;
+  color: #3D1101;
+  background-color: #fafafa;
+  background-color: #EFE9E7;
+  padding: 30px 0 10px 0;
+  line-height: 1.5; }
+  .content #features {
+    background-color: #EFE9E7; }
+    .content #features:before, .content #features:after {
+      content: "";
+      display: table; }
+    .content #features:after {
+      clear: both; }
+    .content #features #introText {
+      height: 110px;
+      text-align: center;
+      padding-left: 30px;
+      font-size: 25px; }
+      .content #features #introText span {
+        display: inline-block;
+        width: 15%;
+        border-bottom: 1px solid #3D1101; }
+      @media (max-width: 460px) {
+        .content #features #introText {
+          font-size: 16px;
+          height: 75px; } }
+    .content #features #introList ul li {
+      width: 30%;
+      float: left;
+      margin-left: 2%;
+      margin-right: 1%;
+      margin-bottom: 16px; }
+      @media (max-width: 800px) {
+        .content #features #introList ul li {
+          float: none;
+          width: 85%;
+          margin: 0 auto;
+          text-align: center; } }
+      .content #features #introList ul li img {
+        display: block;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        border-radius: 50%;
+        margin-bottom: 16px; }
+      .content #features #introList ul li h6 {
+        text-align: center; }
+      .content #features #introList ul li p {
+        padding: 15px 20px 15px 35px; }
+        @media (max-width: 800px) {
+          .content #features #introList ul li p {
+            padding: 15px 25px 15px 50px; } }
+  .content #chefInfo {
+    background-color: #141414; }
+    .content #chefInfo:before, .content #chefInfo:after {
+      content: "";
+      display: table; }
+    .content #chefInfo:after {
+      clear: both; }
+    .content #chefInfo .chefImg {
+      float: left;
+      width: 43.5%;
+      min-width: 250px;
+      min-height: 470px;
+      margin-left: 5%;
+      background-image: url(../imgs/main_chef_brown.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat; }
+      @media (max-width: 530px) {
+        .content #chefInfo .chefImg {
+          float: none;
+          width: 100%;
+          min-width: 0px;
+          min-height: 280px;
+          margin: 0; } }
+    .content #chefInfo .chefIntroText {
+      float: left;
+      width: 40%;
+      max-width: 300px;
+      margin-left: 5%;
+      margin-top: 60px;
+      font-size: 16px;
+      font-family: "Lato";
+      color: #FFFFFF; }
+      @media (max-width: 635px) {
+        .content #chefInfo .chefIntroText {
+          margin-top: 30px;
+          font-size: 14px; } }
+      @media (max-width: 530px) {
+        .content #chefInfo .chefIntroText {
+          float: none;
+          width: 100%;
+          max-width: 80%;
+          margin-left: 10%;
+          margin-bottom: 20px; } }
+      .content #chefInfo .chefIntroText h3 {
+        font-family: "Noto Sans";
+        font-size: 20px; }
+        @media (max-width: 635px) {
+          .content #chefInfo .chefIntroText h3 {
+            font-size: 14px; } }
+  .content #comments:before, .content #comments:after {
+    content: "";
+    display: table; }
+  .content #comments:after {
+    clear: both; }
+  .content #comments h4 {
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.5;
+    margin-top: 20px; }
+  .content #comments ul {
+    margin-top: 16px; }
+    .content #comments ul li {
+      float: left;
+      width: 30%;
+      margin-left: 22px;
+      letter-spacing: 1.5px; }
+      @media (max-width: 800px) {
+        .content #comments ul li {
+          float: none;
+          width: 70%;
+          margin: 60px auto;
+          text-align: center; } }
+      .content #comments ul li img {
+        width: 67px;
+        height: 67px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%; }
+      .content #comments ul li p {
+        margin-top: 22px; }
+      .content #comments ul li .status {
+        float: right;
+        margin-right: 5%; }
+        @media (max-width: 800px) {
+          .content #comments ul li .status {
+            margin: 10px 0 0 0; } }
+  .content #seatRegister {
+    margin-top: 10px;
+    padding-top: 35px;
+    text-align: center;
+    background-color: rgba(250, 250, 250, 0.699); }
+    .content #seatRegister h4 {
+      font-size: 25px;
+      margin-bottom: 35px; }
+    .content #seatRegister .map {
+      float: left;
+      margin-left: 5%;
+      background-image: url(../imgs/Map.png);
+      background-repeat: no-repeat;
+      display: inline-block;
+      height: 386px;
+      width: 45%;
+      border-right: 1px solid rgba(202, 197, 197, 0.884);
+      border-bottom: 1px solid rgba(202, 197, 197, 0.884); }
+      @media (max-width: 567px) {
+        .content #seatRegister .map {
+          float: none;
+          width: 80%;
+          margin: 0; } }
+    .content #seatRegister .seatForm .pure-form-aligned fieldset {
+      margin: 0;
+      border: 0;
+      padding: 2% 3% 3% 5%; }
+    .content #seatRegister .seatForm .pure-form-aligned .pure-control-group label {
+      display: block;
+      text-align: left;
+      margin-bottom: 6px; }
+    .content #seatRegister .seatForm .pure-form-aligned .pure-control-group input {
+      display: block;
+      width: 95%;
+      margin-bottom: 6px; }
+    .content #seatRegister .seatForm .pure-form-aligned .pure-controls {
+      margin: 0;
+      text-align: left; }
+      .content #seatRegister .seatForm .pure-form-aligned .pure-controls .pure-radio {
+        margin: 5px 15px 0 0;
+        display: inline-block; }
+      .content #seatRegister .seatForm .pure-form-aligned .pure-controls .btns {
+        text-align: right;
+        margin-top: 10px; }
+        .content #seatRegister .seatForm .pure-form-aligned .pure-controls .btns #cancel-btn {
+          background-color: #5f5c5a;
+          margin-right: 15px; }
+          .content #seatRegister .seatForm .pure-form-aligned .pure-controls .btns #cancel-btn:hover {
+            background-color: #7a7a7a;
+            background-color: rgba(122, 122, 122, 0.712); }
+        .content #seatRegister .seatForm .pure-form-aligned .pure-controls .btns #send_btn {
+          background-color: #F56C23;
+          margin-right: 20px; }
+          .content #seatRegister .seatForm .pure-form-aligned .pure-controls .btns #send_btn:hover {
+            background-color: #f3b60d; }

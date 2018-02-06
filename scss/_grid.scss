@@ -1,5 +1,11 @@
+@mixin one-column{
+    @media (max-width: 670px) {
+        @content
+    }
+}
+
 @mixin i-pad {
-    @media (max-width: 800px) {
+    @media (max-width: 769px) {
         @content
     }
 }

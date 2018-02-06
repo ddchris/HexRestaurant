@@ -2,3 +2,231 @@
 @import 'mixin';
 @import 'layout';
 @import 'variables';
+
+.content{
+    width: 100%;
+    color: $major-ft-color;
+    background-color: rgb(250,250,250);
+    background-color: $content-bg-color;
+    padding: 30px 0 10px 0;
+    line-height: 1.5;
+    #features{
+        @include clearfix;
+        background-color: $content-bg-color;
+        #introText{
+            height: 110px;
+            text-align: center;
+            padding-left: 30px;
+            font-size: 25px;
+            span{
+                display: inline-block;
+                width: 15%;
+                border-bottom: 1px solid $major-ft-color;
+            }
+            @media (max-width:460px){
+                font-size: $ft-m;
+                height: 75px;
+            }
+        }
+        #introList{
+            ul{
+                li{
+                    width: 30%;
+                    float: left;
+                    margin-left: 2%;
+                    margin-right: 1%;
+                    margin-bottom: 16px;
+                    @media (max-width: 800px) {
+                        float: none;
+                        width: 85%;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+                    img{
+                        display: block;
+                        width: 200px;
+                        height: 200px;
+                        margin: 0 auto;
+                        border-radius: 50%;
+                        margin-bottom: 16px;
+                    }
+                    h6{
+                        text-align: center;
+                    }
+                    p{
+                        padding: 15px 20px 15px 35px;
+                        @media (max-width: 800px) {
+                        padding: 15px 25px 15px 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #chefInfo{
+        @include clearfix;
+        background-color: rgb(20, 20, 20);
+        .chefImg{
+            float: left;
+            width: 43.5%;
+            min-width: 250px;
+            min-height: 470px;
+            margin-left: 5%;
+            background-image: url(../imgs/main_chef_brown.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            @media (max-width: 530px) {
+                float: none;
+                width: 100%;
+                min-width: 0px;
+                min-height: 280px;
+                margin: 0;
+            }
+        }
+        .chefIntroText{
+            float: left;
+            width: 40%;
+            max-width: 300px;
+            margin-left: 5%;
+            margin-top: 60px;
+            font-size: $ft-m;
+            font-family: $ft-eng;
+            color: $minor-ft-color;
+            @media (max-width: 635px) {
+            margin-top: 30px;
+            font-size: $ft-s;
+            }
+            @media (max-width: 530px) {
+                float: none;
+                width: 100%;
+                max-width: 80%;
+                margin-left: 10%;
+                margin-bottom: 20px;
+
+            }
+            h3{
+                font-family: $ft-chi;
+                font-size: $ft-xl;
+                @media (max-width: 635px) {
+                font-size: $ft-s;
+                }
+            }
+
+        }
+    }
+    #comments{
+        @include clearfix;
+        h4{
+            text-align: center;
+            font-size: $ft-xxl;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+        ul{
+            margin-top: 16px;
+            li{
+                float: left;
+                width: 30%;
+                margin-left: 22px;
+                letter-spacing: 1.5px;
+                @media (max-width: 800px) {
+                    float: none;
+                    width: 70%;
+                    margin: 60px auto;
+                    text-align: center;
+                }
+                img{
+                    width: 67px;
+                    height: 67px;
+                    @include border-radius(50%);
+                }
+                p{
+                    margin-top: 22px;
+                }
+                .status{
+                    float: right;
+                    margin-right: 5%;
+                    @media (max-width: 800px) {
+                        margin: 10px 0 0 0;
+                    }  
+                }
+            }
+        }
+    }
+    #seatRegister{
+        margin-top: 10px;
+        padding-top: 35px;
+        text-align: center;
+        background-color: rgba(250, 250, 250, 0.699);
+        h4{
+            font-size: $ft-xxl;
+            margin-bottom: 35px;
+        }
+        .map{
+            float: left;
+            margin-left: 5%;
+            background-image: url(../imgs/Map.png);
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 386px;
+            width: 45%;
+            border-right: 1px solid rgba(202, 197, 197, 0.884);
+            border-bottom: 1px solid rgba(202, 197, 197, 0.884);
+            @include below-i-5-cross{
+                float: none;
+                width: 80%;
+                margin: 0;
+            }
+
+        }
+        .seatForm{
+            .pure-form-aligned{
+                fieldset{
+                    margin: 0;
+                    border: 0;
+                    padding: 2% 3% 3% 5%;
+                }
+                .pure-control-group{
+                    label{
+                        display: block;
+                        text-align: left;
+                        margin-bottom: 6px;
+
+                    }
+                    input{
+                        display: block;
+                        width: 95%;
+                        margin-bottom: 6px;
+                    }
+                }
+                .pure-controls{
+                    margin: 0;
+                    text-align: left;
+                    .pure-radio{
+                        margin: 5px 15px 0 0;
+                        display: inline-block;
+                    }
+                    .btns{
+                        text-align: right;
+                        margin-top: 10px;
+                        #cancel-btn{
+                            background-color: rgb(95, 92, 90);
+                            margin-right: 15px;
+                            &:hover{
+                                background-color: rgb(122, 122, 122);
+                                background-color: rgba(122, 122, 122, 0.712);
+                            }
+                        }
+                        #send_btn{
+                            background-color: #F56C23;
+                             margin-right: 20px;
+                            &:hover{
+                            background-color: rgb(243, 182, 13);
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

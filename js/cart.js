@@ -24,24 +24,11 @@ let main = new Vue({
 
 });
 
-let el = document.querySelector('.main');
-el.addEventListener('mouseover', function (e) {
-    if (e.target.nodeName === 'LI') {
-        e.target.setAttribute('class', 'animated infinite pulse');
-    }
-    else if (e.target.nodeName === 'IMG') {
-        let grandPa = e.target.parentNode.parentNode;
-        grandPa.setAttribute('class', 'animated infinite pulse');
-    }
-}, false);
-
-el.addEventListener('mouseout', function (e) {
-    console.log(e.target.nodeName);
-    if (e.target.nodeName === 'LI') {
-        e.target.setAttribute('class', '');
-    }
-    else if (e.target.nodeName === 'IMG') {
-        let grandPa = e.target.parentNode.parentNode;
-        grandPa.setAttribute('class', '');
-    }
-}, false);
+$(document).ready(function () {
+    $('.main li').mouseenter(function (e) {
+        $(this).addClass('animated infinite pulse');
+    })
+    $('.main li').mouseleave(function (e) {
+        $(this).removeClass('animated infinite pulse');
+    })
+});

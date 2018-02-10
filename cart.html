@@ -24,6 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans">
     <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/cart.css">
@@ -110,17 +111,19 @@
                 </div>
                 <ul>
                     <li v-for="food in foods">
-                        <div class="img">
-                            <img :src=food.url>
-                        </div>
-                        <div id="information">
-                            <h5 id="foodTitle">{{food.title}}</h5>
-                            <h5 id="engTitle">{{food.en_title}}</h5>
-                            <h5>{{food.price}}</h5>
-                            <div id="addToCart">
-                                <i class="fas fa-cart-arrow-down"></i> 加入購物車
+                        <a :href=food.url data-lightbox="food">
+                            <div class="img">
+                                <img :src=food.url>
                             </div>
-                        </div>
+                            <div id="information">
+                                <h5 id="foodTitle">{{food.title}}</h5>
+                                <h5 id="engTitle">{{food.en_title}}</h5>
+                                <h5>{{food.price}}</h5>
+                                <div id="addToCart">
+                                    <i class="fas fa-cart-arrow-down"></i> 加入購物車
+                                </div>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -134,22 +137,20 @@
             </div>
             <div class="contact">
                 <h3>聯絡方式</h3>
-                <p>
-                    <ul>
-                        <li>
-                            <i class="fas fa-road"></i>
-                            高雄市中正路走到底
-                        </li>
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            +886-886-886
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            Hexschool@gmail.com
-                        </li>
-                    </ul>
-                </p>
+                <ul>
+                    <li>
+                        <i class="fas fa-road"></i>
+                        高雄市中正路走到底
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        +886-886-886
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        Hexschool@gmail.com
+                    </li>
+                </ul>
             </div>
             <div class="footLogo">
             </div>
@@ -176,8 +177,22 @@
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script
+  src="http://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+<script src="js/lightbox.js"></script>
 <script src="js/all.js"></script>
 <script src="js//cart.js"></script>
+
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'positionFromTop': 150,
+      'showImageNumberLabel': false,
+      'alwaysShowNavOnTouchDevices': true,
+    })
+</script>
 
 </html>

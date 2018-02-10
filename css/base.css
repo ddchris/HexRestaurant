@@ -88,6 +88,8 @@ body {
       float: left;
       margin-left: 42px;
       margin-top: 16px; }
+    .header h1:hover {
+      cursor: pointer; }
   .header .menu {
     float: right;
     font-size: 20px;
